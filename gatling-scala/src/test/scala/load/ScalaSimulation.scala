@@ -7,12 +7,12 @@ import scala.concurrent.duration._
 import scala.util.Random
 
 /**
- * Большой реалистичный сценарий для сравнения языков (та же логика на Java / Kotlin / Scala).
+ * Большой реалистичный сценарий для сравнения языков (та же логика на Java / Kotlin / Scala / k6).
  * Родной Scala DSL — самый компактный из трёх.
  *
  * Customer journey ~14 запросов/VU, Guest search ~6 запросов/VU.
  * Параметризация: feeders + Random в session-лямбдах.
- * Корреляция: csrf -> session -> orderId -> echo -> подтверждение.
+ * Корреляции: csrf -> session -> orderId -> echo -> подтверждение.
  */
 class ScalaSimulation extends Simulation {
 

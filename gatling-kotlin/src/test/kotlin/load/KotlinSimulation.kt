@@ -9,12 +9,12 @@ import java.util.UUID
 import java.util.concurrent.ThreadLocalRandom
 
 /**
- * Большой реалистичный сценарий для сравнения языков (та же логика на Java / Kotlin / Scala).
+ * Большой реалистичный сценарий для сравнения языков (та же логика на Java / Kotlin / Scala / k6).
  * Java DSL API + лямбды Kotlin; `is`/`in` — в backticks.
  *
  * Customer journey ~14 запросов/VU, Guest search ~6 запросов/VU.
  * Параметризация: feeders + рандом в session-лямбдах.
- * Корреляция: csrf -> session -> orderId -> echo -> подтверждение.
+ * Корреляции: csrf -> session -> orderId -> echo -> подтверждение.
  */
 class KotlinSimulation : Simulation() {
 

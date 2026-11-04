@@ -13,7 +13,7 @@ import java.util.UUID;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * Большой реалистичный сценарий для сравнения языков (та же логика на Java / Kotlin / Scala).
+ * Большой реалистичный сценарий для сравнения языков (та же логика на Java / Kotlin / Scala / k6).
  *
  * JMeter-аналоги:
  *  - CSV Data Set Config        -> userFeeder / searchFeeder (параметризация)
